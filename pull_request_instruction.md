@@ -43,7 +43,7 @@ To go back to the root directory:
 
 
 ### Step 1. Creating a Fork on Github
-Click fork on the github web page to make sure there is a fork under your github repository pools.  
+Click fork on the github web page to make sure there is a Fork under your github repository pools.  
 
 Normally, you all have done this step. Then, clone the Fork to your local machine:
 ```
@@ -81,21 +81,21 @@ __Pull any new commit updates into your repo__
 __ATTENTION!!__:
 
 *  To avoid any conflict, make sure there are no changes in your local repo. 
-*  Make a copy of your repo in local machine if you have done some modification already.
-*  Any file modification or adding new file actions should be done after syncing the local repo from original repository.
+*  Make a copy of your repo in local machine to other place if you have done some modifications already. 
+*  Any file modification or adding new file actions can be done after syncing the local repo from original repository.
 
 
 
 ### Step 3. Do Your Work
-In this step, you are free to update you file and add files into your local repo.
+In this step, you are free to update your file or add files into your local repo.
 
-Once you have finished your modification. You are ready to staging changes and push to your Fork.
+Once you have finished your modification. You are ready to stage changes and push to your Fork.
 The `git status` shows the info about any changes in your local repo:
 ```
  $Termimal: git status
 ```
 
-Staging all the modified files:
+Stage all the modified files:
 ```
  $Termimal: git add .
 ```
@@ -110,6 +110,7 @@ Push to the Fork:
  $Termimal: git push origin master
 ```
 
+Here, you should able to see the changes on your github webpage.  
 
 ### Step 4. Pull Request to Update the Original Repository
 Go to your Fork on the Github webpage. Click on the __Pull requests__ tab.   
