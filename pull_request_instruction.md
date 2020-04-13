@@ -2,22 +2,36 @@
 This is the simplest version of pull request tutorial.   
 Many steps have been skipped in order to save time on solving conflicts.  
 
+## Table of Contents
+* <a href="#definition">Definition</a>
+* <a href="#workflow">Standard Fork & Pull Request Workflow</a>
+	- <a href="#step0">Step 0. Locate the directory for downloading the repo in your Local Machine</a>
+	- <a href="#step1">Step 1. Creating a Fork on Github</a>
+	- <a href="#step2">Step 2. Keep Your Fork Up To Date With Upstream Repo</a>
+	- <a href="#step3">Step 3. Do Your Work</a>
+	- <a href="#step3">Step 4. Pull Request to Update the Original Repository</a>
 
-## Definition
-* repo: Repository
-* Fork: a copy version of repo from the original repository 
+
+## <span id="definition">Definition</span>
+Term | Explanation
+:--|:--
+repo |Repository
+Fork |A copy version of repo from the original repository 
+upstream repo| The original repository  
+
 
 __There are two ways to pull request through github__  
   1. Pull Request from a forked repository  
   2. Pull Request from a branch within a repository  
 
-__Method 1__ is a better approach in our case. Thus, we focus on __method 1__ 
+> Because __method 1__ is a better approach in our case. Thus, we only focus on __method 1__ approach.
+    
 
 
-## Standard fork & Pull Request Workflow
-### Step 0. Locate the directory for downloading the repo in your Local Machine
+## <span id="workflow">Standard Fork & Pull Request Workflow</span>
+### <span id="step0">Step 0. Locate the directory for downloading the repo in your Local Machine</span>
 
-Create a folder to store repo in local machine. Here, the folder name is called 'Github': 
+Create a folder under the root directory to store repo in local machine. Here, the folder name is called 'Github': 
 ```
  $Terminal: mkdir Github     
 ```
@@ -27,7 +41,7 @@ Re-direct to the folder just created:
  $Terminal: cd Github
 ```
   
-You can also check a list of folder by having the command:
+You can also check a list of folder or files by having the command:
 ```
  $Terminal: ls 
 ```
@@ -42,7 +56,8 @@ To go back to the root directory:
 ```
 
 
-### Step 1. Creating a Fork on Github
+
+### <span id="step1">Step 1. Creating a Fork on Github</span>
 Click fork on the github web page to make sure there is a Fork under your github repository pools.  
 
 Normally, you all have done this step. Then, clone the Fork to your local machine:
@@ -59,7 +74,8 @@ Now, you are just half-ready to update your Fork
 
 
 
-### Step 2. Keep Your Fork Up To Date With Upstream Repo
+
+### <span id="step2">Step 2. Keep Your Fork Up To Date With Upstream Repo</span>
 In order to do any modification, you will want to make sure you keep your Fork up to date to avoiding any conflict by tracking the original 'upstream' repo.
 
 __Add 'upstream' repo to list of remotes__:
@@ -86,7 +102,8 @@ __ATTENTION!!__:
 
 
 
-### Step 3. Do Your Work
+
+### <span id="step3">Step 3. Do Your Work</span>
 In this step, you are free to update your file or add files into your local repo.
 
 Once you have finished your modification. You are ready to stage changes and push to your Fork.
@@ -112,7 +129,11 @@ Push to the Fork:
 
 Here, you should able to see the changes on your github webpage.  
 
-### Step 4. Pull Request to Update the Original Repository
+
+### <span id="step4">Step 4. Pull Request to Update the Original Repository</span>
 Go to your Fork on the Github webpage. Click on the __Pull requests__ tab.   
 There is a __New pull request__ button. Click on the __New pull request__ button and follow the steps.  
 Then, you have finished the whole __Pull Request__ process.  
+
+
+[<p align='center'>Top</p>](#pull-request-instruction)
