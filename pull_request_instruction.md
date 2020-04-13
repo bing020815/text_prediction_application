@@ -50,8 +50,8 @@ Normally, you all have done this step. Then, clone the Fork to your local machin
  $Termimal: git clone https://github.com/__YourUserName__/text_prediction_application.git
 ```
 
-Here, you have clone the repo to your local machine.
-To check everythin in your local machine about the repo, re-direct to the repo folder
+Here, you have cloned the repo to your local machine.
+To check everything in your local machine about the repo, re-direct to the repo folder
 ```
  $Termimal: cd text_prediction_application
 ```
@@ -79,8 +79,10 @@ __Pull any new commit updates into your repo__
 ```
 
 __ATTENTION!!__:
-To avoid any conflict, make sure there are no changes in your local repo. 
-Any file modification or adding new file actions should be done after syncing the local repo from original repository.
+
+*  To avoid any conflict, make sure there are no changes in your local repo. 
+*  Make a copy of your repo in local machine if you have done some modification already.
+*  Any file modification or adding new file actions should be done after syncing the local repo from original repository.
 
 
 
