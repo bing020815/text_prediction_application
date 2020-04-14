@@ -6,7 +6,7 @@ Created on Mon Apr  6 18:23:47 2020
 @author: jasonmaloney
 """
 import os
-
+# oi oi
 def stopword_remover(document):
     nltkstopwords = stopwords.words('english')
     #addl_stopwords = ['subject', '']
