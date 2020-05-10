@@ -1,2 +1,2 @@
-# text_prediction_model
-Codes for text_prediction_model
+# text
+Codes for text prediction 
