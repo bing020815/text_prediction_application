@@ -52,7 +52,7 @@ To get the n-gram probabilities, use estilmate probabilities, __maximum likeliho
 
 <p><br></p>
 
-The equation 5 can be simplified. Since the sum of all bigram counts that start with a given word $w_{n-1}$ must be equal to the unigram count for that word ![w_{n-1}](https://render.githubusercontent.com/render/math?math=w_%7Bn-1%7D):
+The equation 5 can be simplified. Since the sum of all bigram counts that start with a given word ![w_{n-1}](https://render.githubusercontent.com/render/math?math=w_%7Bn-1%7D) must be equal to the unigram count for that word ![w_{n-1}](https://render.githubusercontent.com/render/math?math=w_%7Bn-1%7D):
 
 ![P(w_n | w_{n-1}) = \frac{C(w_{n-1}w_n)}{C(w_{n-1})}](https://render.githubusercontent.com/render/math?math=P(w_n%20%7C%20w_%7Bn-1%7D)%20%3D%20%5Cfrac%7BC(w_%7Bn-1%7Dw_n)%7D%7BC(w_%7Bn-1%7D)%7D)  
 *(equation  6)*   
@@ -69,4 +69,6 @@ trigram (N=2) :  ![P(w_{n}| w_{n-1}) = \frac{C(w_P(w_{n}| w_{n-2}, w_{n-1})= \fr
 <p><br></p>
 <p><br></p>
 
-Reference:[Speech and Language Processing : Chapter 3]
+Reference:  
+[Speech and Language Processing : Chapter 3]  
+[latex-markdown](https://alexanderrodin.com/github-latex-markdown/)
