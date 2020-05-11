@@ -3,7 +3,7 @@ Codes for text prediction
 
 
 ## Model
-The N-gram model was built by bigram, trigram, fourgram and fivegram models using backoff approach.
+The N-gram model was built by `bigram`, `trigram`, `fourgram` and `fivegram` models using __chain rule__, __maximum likelihood estimation__ and __backoff approach__.
 
 ## Concept
 __Note:__ the expression ![W_1^{n-1}](https://render.githubusercontent.com/render/math?math=%24W_1%5E%7Bn-1%7D%24) means the string ![w_1,w_2,...,w_{n-1}](https://render.githubusercontent.com/render/math?math=%24w_1%2Cw_2%2C...%2Cw_%7Bn-1%7D%24)
@@ -62,7 +62,7 @@ The equation 5 can be simplified. Since the sum of all bigram counts that start 
 __Generalized equations for n-grams__:  
 
 bigram (N=1)  :  ![P(w_{n}| w_{n-1}) = \frac{C(w_{n-1}w_n)}{C(w_{n-1})}](https://render.githubusercontent.com/render/math?math=P(w_%7Bn%7D%7C%20w_%7Bn-1%7D)%20%3D%20%5Cfrac%7BC(w_%7Bn-1%7Dw_n)%7D%7BC(w_%7Bn-1%7D)%7D)   
-trigram (N=2) :  ![P(w_{n}| w_{n-1}) = \frac{C(w_P(w_{n}| w_{n-2}, w_{n-1})= \frac{C(w_{n-2}w_{n-1}w_n)}{C(w_{n-2}w_{n-1})}{n-1}w_n)}{C(w_{n-1})}](https://render.githubusercontent.com/render/math?math=P(w_%7Bn%7D%7C%20w_%7Bn-1%7D)%20%3D%20%5Cfrac%7BC(w_P(w_%7Bn%7D%7C%20w_%7Bn-2%7D%2C%20w_%7Bn-1%7D)%3D%20%5Cfrac%7BC(w_%7Bn-2%7Dw_%7Bn-1%7Dw_n)%7D%7BC(w_%7Bn-2%7Dw_%7Bn-1%7D)%7D%7Bn-1%7Dw_n)%7D%7BC(w_%7Bn-1%7D)%7D)    
+trigram (N=2) :  ![P(w_{n}| w_{n-2}, w_{n-1})= \frac{C(w_{n-2}w_{n-1}w_n)}{C(w_{n-2}w_{n-1})}](https://render.githubusercontent.com/render/math?math=P(w_%7Bn%7D%7C%20w_%7Bn-2%7D%2C%20w_%7Bn-1%7D)%3D%20%5Cfrac%7BC(w_%7Bn-2%7Dw_%7Bn-1%7Dw_n)%7D%7BC(w_%7Bn-2%7Dw_%7Bn-1%7D)%7D)   
 4-gram  (N=3) :  ![P(w_{n}| w_{n-3}, w_{n-2}, w_{n-1})= \frac{C(w_{n-3}w_{n-2}w_{n-1}w_n)}{C(w_{n-3}w_{n-2}w_{n-1})}](https://render.githubusercontent.com/render/math?math=P(w_%7Bn%7D%7C%20w_%7Bn-3%7D%2C%20w_%7Bn-2%7D%2C%20w_%7Bn-1%7D)%3D%20%5Cfrac%7BC(w_%7Bn-3%7Dw_%7Bn-2%7Dw_%7Bn-1%7Dw_n)%7D%7BC(w_%7Bn-3%7Dw_%7Bn-2%7Dw_%7Bn-1%7D)%7D)    
 
 
