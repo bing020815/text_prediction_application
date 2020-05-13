@@ -8,7 +8,7 @@ This is the filing tutorial for the __text_prediction_application__ project. To 
 * <a href="#path">Path</a>
 
 
-## <span id="structure">Structure</span>
+## <span id="structure">Repo Structure</span>
 |root|1st level|2nd level|
 |---|---|---|
 |github_repo/|------	|------	|
@@ -57,7 +57,7 @@ To get the url of the data:
 Click the data file -> Click on 'View raw' -> copy the url showing on the browser
 ```
 
-When saving a model, use the `relative path` approach to save the model into the `model` folder
+When saving a model, use the `relative path` approach to save the model into the `models` folder
 
 ```
 '../models/model.p'
