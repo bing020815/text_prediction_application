@@ -10,6 +10,8 @@ Many steps have been skipped in order to save time on solving conflicts.
 	- <a href="#step2">Step 2. Keep Your Fork Up To Date With Upstream Repo</a>
 	- <a href="#step3">Step 3. Do Your Work</a>
 	- <a href="#step3">Step 4. Pull Request to Update the Original Repository</a>
+* <a href="#updatefork">Update Your Fork</a>
+
 
 
 ## <span id="definition">Definition</span>
@@ -26,7 +28,7 @@ __There are two ways to pull request through github__
 
 > Because __method 1__ is a better approach in our case. Thus, we only focus on __method 1__ approach.
     
-
+<p><br></p>
 
 ## <span id="workflow">Standard Fork & Pull Request Workflow</span>
 ### <span id="step0">Step 0. Locate the directory for downloading the repo in your Local Machine</span>
@@ -134,6 +136,37 @@ Here, you should able to see the changes on your github webpage.
 Go to your Fork on the Github webpage. Click on the __Pull requests__ tab.   
 There is a __New pull request__ button. Click on the __New pull request__ button and follow the steps.  
 Then, you have finished the whole __Pull Request__ process.  
+
+<p><br></p>
+
+
+## <span id="updatefork">Update Your Fork</span>
+
+1. Add the remote (the original repo that was forked) and call it `upstream`.
+```
+ $Termimal: git remote add upstream https://github.com/bing020815/text_prediction_application.git
+```
+
+2. Fetch all branches of remote upstream.
+```
+ $Termimal: git fetch
+```
+
+3. Rewrite your master with master from upstream using `git rebase`.
+```
+ $Termimal: git rebase upstream/master 
+```
+3.1 <strong>Note: </strong> If you have edited or updated any file in your local machine previously, please either copy those files to other places for backup or just use the `git restore` command to restore your repo.
+```
+ $Termimal: git restore . 
+```
+
+4. Make updates on your repo. Push your updates to master.
+```
+ $Termimal: git push origin master 
+```
+
+
 
 
 [<p align='center'>Top</p>](#pull-request-instruction)
