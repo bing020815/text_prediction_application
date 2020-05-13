@@ -45,7 +45,7 @@ __Inferred equations for n-grams__:
 * 4-gram  (N=3) :  ![P(w_{n}| w_{n-3}, w_{n-2})](https://render.githubusercontent.com/render/math?math=%24P(w_%7Bn%7D%7C%20w_%7Bn-3%7D%2C%20w_%7Bn-2%7D)%24)     
 <p><br></p>
 
-To get the n-gram probabilities, use estilmate probabilities, __maximum likelihood estimation__ (__MLE__), and normalize the counts so the probability can lie between 0 and 1. Here is the example for computing a bigram probability:
+To get the n-gram probabilities, use estilmate probabilities, __maximum likelihood estimation__ (__MLE__), and normalize the counts so the probability can lie between 0 and 1. Here is the example for computing a bigram probability. For example, compute the count of the bigram C(xy) and normalize by the sum of all the bigrams that share the same first word x:
 
 ![P(w_n | w_{n-1}) = \frac{C(w_{n-1}w_n)}{\displaystyle\sum_{w}C(w_{n-1}w)}](https://render.githubusercontent.com/render/math?math=P(w_n%20%7C%20w_%7Bn-1%7D)%20%3D%20%5Cfrac%7BC(w_%7Bn-1%7Dw_n)%7D%7B%5Cdisplaystyle%5Csum_%7Bw%7DC(w_%7Bn-1%7Dw)%7D)  
 *(equation  5)*  
