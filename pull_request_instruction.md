@@ -10,7 +10,7 @@ Many steps have been skipped in order to save time on solving conflicts.
 	- <a href="#step2">Step 2. Keep Your Fork Up To Date With Upstream Repo</a>
 	- <a href="#step3">Step 3. Do Your Work</a>
 	- <a href="#step3">Step 4. Pull Request to Update the Original Repository</a>
-* <a href="#updatefork">Update Your Fork</a>
+* <a href="#updatefork">Update Your Fork From Original Repository</a>
 
 
 
@@ -140,28 +140,40 @@ Then, you have finished the whole __Pull Request__ process.
 <p><br></p>
 
 
-## <span id="updatefork">Update Your Fork</span>
+## <span id="updatefork">Update Your Fork From Original Repository</span>
 
-1. Add the remote (the original repo that was forked) and call it `upstream`.
+The original repository is changing over time. Many will make pull request to commit on the original repo. If your fork has not been updated, it might have several commits behined the original repo. To make sure there is no conflict when you make a pull request to the original repo, make your fork consistent with the original repo to get the latest commit from others.  
+
+Step 1. Add the remote (the original repo that was forked) and call it `upstream`.
 ```
  $Termimal: git remote add upstream https://github.com/bing020815/text_prediction_application.git
 ```
 
-2. Fetch all branches of remote upstream.
+Step 2. Fetch all branches of remote upstream.
 ```
  $Termimal: git fetch
 ```
 
-3. Rewrite your master with master from upstream using `git rebase`.
-```
- $Termimal: git rebase upstream/master 
-```
-3.1 <strong>Note: </strong> If you have edited or updated any file in your local machine previously, please either copy those files to other places for backup or just use the `git restore` command to restore your repo.
+Step 3. Get the newest conetent from the original repository.  
+
+<strong>Note: </strong> If you have edited or updated any file in your local machine previously, please either copy those files to other places for backup or just use the `git restore` command to restore your repo.
 ```
  $Termimal: git restore . 
 ```
 
-4. Make updates on your repo. Push your updates to master.
+There are two ways to get the newest conetent from the original repository (upstream). You can either do `git pull` or `git rebase`.  
+
+1. (option 1) Pull the commits directly from the original repository (upstream) using `git pull` command.
+```
+ $Termimal: git pull upstream master 
+```
+
+2. (option 2) Rewrite your master with master from upstream using `git rebase`.
+```
+ $Termimal: git rebase upstream/master 
+```
+
+Step 4. Make update on your repo. Push your updates to master.
 ```
  $Termimal: git push origin master 
 ```
