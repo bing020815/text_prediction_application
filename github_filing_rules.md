@@ -9,18 +9,21 @@ This is the filing tutorial for the __text_prediction_application__ project. To 
 
 
 ## <span id="structure">Repo Structure</span>
-|root|1st level|2nd level|
-|---|---|---|
-|github_repo/|------	|------	|
-|		|application/|------	|
-|		|data/|aclImdb	|
-|		|	|movie_data	|
-|		|	|reviews	|
-|		|models/|------	|
-|		|img/|------	|
-|		|sentiment/|------	|
-|		|text/|------	|
-|		|others/|------	|
+
+```
+.
+├── readme.md
+├── data
+│   └── aclImdb
+│   └── movie_data	
+│   └── reviews	
+├── models
+├── img
+├── sentiment
+├── text
+└── others
+```
+
 
 * Folder purpose:
 	- __application__: application relative, ex: anvil code
