@@ -4,6 +4,9 @@ A text prediction application for movie reviews with sentiment analysis in real-
 ### Application
 * [Text Prediction from Review](https://pdht24snt663m2h7.anvil.app/OT4EUOR5JVBBGOHFV533U2KM)
 
+### App Demo
+<a href="{https://youtu.be/klcGPYj_jQk}" title="Text Prediction on Movie Review Prototype Demo"><img src="{https://github.com/bing020815/text_prediction_application/blob/master/others/screen.png?raw=true}" alt="App Demo"/></a>
+[![App Demo]({https://github.com/bing020815/text_prediction_application/blob/master/others/screen.png?raw=true})]({https://youtu.be/klcGPYj_jQk} "Text Prediction on Movie Review Prototype Demo")
 ### Notes
 * Project owner: Jason Maloney, Bing-Je Wu,  Maya Mileva and Antonio Llorens
 * This project is inspired by [Kevin Markham from Data School](https://www.dataschool.io/about/)
