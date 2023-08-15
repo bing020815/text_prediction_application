@@ -8,7 +8,7 @@ A text prediction application for movie reviews with sentiment analysis in real-
 <a href="https://www.youtube.com/watch?v=klcGPYj_jQk" target="_blank"><img src="http://img.youtube.com/vi/klcGPYj_jQk/0.jpg" alt="Text Prediction on Movie Review Prototype Demo" border="10" /></a>
 
 ### Notes
-* Project owner: Jason Maloney, Bing-Je Wu,  Maya Mileva and Antonio Llorens
+* Project owner: Bing-Je Wu, Jason Maloney, Maya Mileva and Antonio Llorens
 * This project is inspired by [Kevin Markham from Data School](https://www.dataschool.io/about/)
 * Build an adaptive version of the application based on the concept of [this application](https://justmarkham.shinyapps.io/textprediction/)
 * The goal for this application is to predict the sentiment level (positive or negative) of a movie review in real-time with the ability to recommend the next word that a user is going to enter.
